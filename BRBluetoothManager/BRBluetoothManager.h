@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <GameKit/GameKit.h>
+#import "BRDataPacket.h"
 
 extern NSString * const BRBluetoothManagerSessionName;
 
@@ -17,14 +18,11 @@ extern NSString * const BRBluetoothManagerSessionName;
 
 -(void)bluetoothManager:(BRBluetoothManager *)manager didConnectToPeer:(NSString *)peer;
 -(void)bluetoothManager:(BRBluetoothManager *)manager didDisconnectFromPeer:(NSString *)peer;
-
--(void)bluetoothManager:(BRBluetoothManager *)manager didReceiveData:(NSData *)data;
+-(void)bluetoothManager:(BRBluetoothManager *)manager didReceiveDataOfLength:(int)length fromTotal:(int)totalLength withRemaining:(int)remaining;
 -(void)bluetoothManager:(BRBluetoothManager *)manager didCompleteTransferOfData:(NSData *)data;
 -(void)bluetoothManager:(BRBluetoothManager *)manager receiveDataFailedWithError:(NSError *)error;
 
-
 @end
-
 
 @interface BRBluetoothManager : NSObject <GKSessionDelegate, GKPeerPickerControllerDelegate>
 

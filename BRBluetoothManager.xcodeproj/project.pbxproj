@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1F521416C4E4AC003D61E9 /* BRDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */; };
 		3AA3CFBC16C248CC0043F058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBB16C248CC0043F058 /* UIKit.framework */; };
 		3AA3CFBE16C248CC0043F058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBD16C248CC0043F058 /* Foundation.framework */; };
 		3AA3CFC016C248CC0043F058 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A1F521216C4E4AC003D61E9 /* BRDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDataPacket.h; sourceTree = "<group>"; };
+		3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDataPacket.m; sourceTree = "<group>"; };
 		3AA3CFB816C248CC0043F058 /* BRBluetoothManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRBluetoothManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3CFBB16C248CC0043F058 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3AA3CFBD16C248CC0043F058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -137,6 +140,8 @@
 				3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */,
 				3AA3CFFE16C3945B0043F058 /* BRDebugUtilities.h */,
 				3AA3CFFF16C3945C0043F058 /* BRDebugUtilities.m */,
+				3A1F521216C4E4AC003D61E9 /* BRDataPacket.h */,
+				3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */,
 			);
 			path = BRBluetoothManager;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				3AA3CFDB16C248CC0043F058 /* BRViewController.m in Sources */,
 				3AA3CFFB16C249000043F058 /* BRBluetoothManager.m in Sources */,
 				3AA3D00016C3945C0043F058 /* BRDebugUtilities.m in Sources */,
+				3A1F521416C4E4AC003D61E9 /* BRDataPacket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

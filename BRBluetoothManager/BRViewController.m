@@ -46,13 +46,20 @@
     NSLog(@"Delegate: disconnected from peer");
 }
 
--(void)bluetoothManager:(BRBluetoothManager *)manager didReceiveData:(NSData *)data {
-    NSLog(@"Delegate: received data of size: %ikb",[data length]/1024);
+-(void)bluetoothManager:(BRBluetoothManager *)manager didReceiveDataOfLength:(int)length fromTotal:(int)totalLength withRemaining:(int)remaining {
+    
+    NSLog(@"Delegate: received %ikb of %ikb",remaining/1024,totalLength/1024);
+    
+}
+
+-(void)bluetoothManager:(BRBluetoothManager *)manager didCompleteTransferOfData:(NSData *)data {
+    
+    NSLog(@"All done!");
+    
 }
 
 -(void)bluetoothManager:(BRBluetoothManager *)manager receiveDataFailedWithError:(NSError *)error {
     NSLog(@"Delegate: transfer of data failed");
-    [bluetoothManager ]
 }
 
 - (void)didReceiveMemoryWarning

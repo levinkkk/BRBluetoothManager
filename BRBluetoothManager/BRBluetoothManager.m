@@ -67,7 +67,6 @@ NSString * const BRBluetoothManagerSessionName = @"me.benreed.Gretel";
             NSLog(@"Connected");
             [self.delegate bluetoothManager:self didConnectToPeer:peerID];
             
-            
             break;
             
         case GKPeerStateDisconnected:
@@ -89,24 +88,33 @@ NSString * const BRBluetoothManagerSessionName = @"me.benreed.Gretel";
     
     //Set up variables needed to split and send
     NSUInteger length = [data length];
-    NSUInteger chunkSize = 50 * 1024;
+    NSUInteger chunkSize = 45 * 1024;
     NSUInteger offset = 0;
+    
+    NSLog(@"Total to send: %i kb", length/1024);
     
     NSError *error = nil;
         
     //Iterate over the data, sending it in "chunks"
     do {
-                
+        
         NSUInteger thisChunkSize = length - offset > chunkSize ? chunkSize : length - offset;
         NSData* chunk = [NSData dataWithBytesNoCopy:(char *)[data bytes] + offset
                                              length:thisChunkSize
                                        freeWhenDone:NO];
+        
         offset += thisChunkSize;
         
-        //send it
-        [gameKitSession sendDataToAllPeers:chunk withDataMode:GKSendDataReliable error:&error];
+        //Create the data packet
+        BRDataPacket *packet = [[BRDataPacket alloc] init];
+        packet.packet = chunk;
+        packet.totalSize = length;
+        packet.remaining = offset ;
         
-        NSLog(@"Sending %ikb data",[chunk length]/1024);
+        NSData *dataToSend = [NSKeyedArchiver archivedDataWithRootObject:packet];
+        
+        //send it
+        [gameKitSession sendDataToAllPeers:dataToSend withDataMode:GKSendDataReliable error:&error];
         
     } while (offset < length);
     
@@ -121,8 +129,12 @@ NSString * const BRBluetoothManagerSessionName = @"me.benreed.Gretel";
     
     //Append the received data to the recieved data object
     if(data != nil){
-        [receivedData appendData:data];
-        [self.delegate bluetoothManager:self didReceiveData:data];
+        
+        BRDataPacket *packet = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+        
+        [receivedData appendData:packet.packet];
+        [self.delegate bluetoothManager:self didReceiveDataOfLength:[packet.packet length] fromTotal:packet.totalSize withRemaining:packet.remaining];
+        
     }else{
         [self handleReceivedData];
     }
