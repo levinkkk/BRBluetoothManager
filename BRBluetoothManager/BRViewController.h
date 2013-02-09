@@ -11,4 +11,7 @@
 
 @interface BRViewController : UIViewController <BRBluetoothManagerDelegate>
 
+@property (nonatomic, strong) IBOutlet UIButton *sendButton;
+@property (nonatomic, strong) IBOutlet UIButton *connectButton;
+
 @end
