@@ -7,11 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AA3CFE316C248CC0043F058 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFE216C248CC0043F058 /* SenTestingKit.framework */; };
 		3AA3CFE416C248CC0043F058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBB16C248CC0043F058 /* UIKit.framework */; };
 		3AA3CFE516C248CC0043F058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBD16C248CC0043F058 /* Foundation.framework */; };
-		3AA3CFED16C248CC0043F058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFEB16C248CC0043F058 /* InfoPlist.strings */; };
-		3AA3CFF016C248CC0043F058 /* BRBluetoothManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFEF16C248CC0043F058 /* BRBluetoothManagerTests.m */; };
 		3AC9936816C6D4E700115BCF /* BRBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */; };
 		3AC9936916C6D4E700115BCF /* BRDebugUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFF16C3945C0043F058 /* BRDebugUtilities.m */; };
 		3AC9936A16C6D4E700115BCF /* BRDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */; };
@@ -36,11 +33,6 @@
 		3AA3CFBD16C248CC0043F058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3AA3CFE116C248CC0043F058 /* BRBluetoothManagerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRBluetoothManagerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AA3CFE216C248CC0043F058 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		3AA3CFEA16C248CC0043F058 /* BRBluetoothManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRBluetoothManagerTests-Info.plist"; sourceTree = "<group>"; };
-		3AA3CFEC16C248CC0043F058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3AA3CFEE16C248CC0043F058 /* BRBluetoothManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRBluetoothManagerTests.h; sourceTree = "<group>"; };
-		3AA3CFEF16C248CC0043F058 /* BRBluetoothManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRBluetoothManagerTests.m; sourceTree = "<group>"; };
 		3AA3CFF916C249000043F058 /* BRBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBluetoothManager.h; sourceTree = "<group>"; };
 		3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBluetoothManager.m; sourceTree = "<group>"; };
 		3AA3CFFC16C249330043F058 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -66,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA3CFE316C248CC0043F058 /* SenTestingKit.framework in Frameworks */,
 				3AA3CFE416C248CC0043F058 /* UIKit.framework in Frameworks */,
 				3AA3CFE516C248CC0043F058 /* Foundation.framework in Frameworks */,
 			);
@@ -91,7 +82,6 @@
 			children = (
 				3AC9934716C6D49500115BCF /* Demo */,
 				3AA3CFC116C248CC0043F058 /* BRBluetoothManager */,
-				3AA3CFE816C248CC0043F058 /* BRBluetoothManagerTests */,
 				3AA3CFBA16C248CC0043F058 /* Frameworks */,
 				3AA3CFB916C248CC0043F058 /* Products */,
 			);
@@ -113,7 +103,6 @@
 				3AA3CFBB16C248CC0043F058 /* UIKit.framework */,
 				3AA3CFBD16C248CC0043F058 /* Foundation.framework */,
 				3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */,
-				3AA3CFE216C248CC0043F058 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,25 +118,6 @@
 				3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */,
 			);
 			path = BRBluetoothManager;
-			sourceTree = "<group>";
-		};
-		3AA3CFE816C248CC0043F058 /* BRBluetoothManagerTests */ = {
-			isa = PBXGroup;
-			children = (
-				3AA3CFEE16C248CC0043F058 /* BRBluetoothManagerTests.h */,
-				3AA3CFEF16C248CC0043F058 /* BRBluetoothManagerTests.m */,
-				3AA3CFE916C248CC0043F058 /* Supporting Files */,
-			);
-			path = BRBluetoothManagerTests;
-			sourceTree = "<group>";
-		};
-		3AA3CFE916C248CC0043F058 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3AA3CFEA16C248CC0043F058 /* BRBluetoothManagerTests-Info.plist */,
-				3AA3CFEB16C248CC0043F058 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3AC9934716C6D49500115BCF /* Demo */ = {
@@ -256,7 +226,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA3CFED16C248CC0043F058 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AA3CFF016C248CC0043F058 /* BRBluetoothManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,14 +283,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3AA3CFEB16C248CC0043F058 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AA3CFEC16C248CC0043F058 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		3AC9935316C6D49500115BCF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
