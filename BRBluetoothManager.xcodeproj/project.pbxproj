@@ -7,57 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A1F521416C4E4AC003D61E9 /* BRDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */; };
-		3AA3CFBC16C248CC0043F058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBB16C248CC0043F058 /* UIKit.framework */; };
-		3AA3CFBE16C248CC0043F058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBD16C248CC0043F058 /* Foundation.framework */; };
-		3AA3CFC016C248CC0043F058 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */; };
-		3AA3CFC616C248CC0043F058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFC416C248CC0043F058 /* InfoPlist.strings */; };
-		3AA3CFC816C248CC0043F058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFC716C248CC0043F058 /* main.m */; };
-		3AA3CFCC16C248CC0043F058 /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFCB16C248CC0043F058 /* BRAppDelegate.m */; };
-		3AA3CFCE16C248CC0043F058 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFCD16C248CC0043F058 /* Default.png */; };
-		3AA3CFD016C248CC0043F058 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFCF16C248CC0043F058 /* Default@2x.png */; };
-		3AA3CFD216C248CC0043F058 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFD116C248CC0043F058 /* Default-568h@2x.png */; };
-		3AA3CFD516C248CC0043F058 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFD316C248CC0043F058 /* MainStoryboard_iPhone.storyboard */; };
-		3AA3CFDB16C248CC0043F058 /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFDA16C248CC0043F058 /* BRViewController.m */; };
 		3AA3CFE316C248CC0043F058 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFE216C248CC0043F058 /* SenTestingKit.framework */; };
 		3AA3CFE416C248CC0043F058 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBB16C248CC0043F058 /* UIKit.framework */; };
 		3AA3CFE516C248CC0043F058 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBD16C248CC0043F058 /* Foundation.framework */; };
 		3AA3CFED16C248CC0043F058 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AA3CFEB16C248CC0043F058 /* InfoPlist.strings */; };
 		3AA3CFF016C248CC0043F058 /* BRBluetoothManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFEF16C248CC0043F058 /* BRBluetoothManagerTests.m */; };
-		3AA3CFFB16C249000043F058 /* BRBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */; };
-		3AA3CFFD16C249330043F058 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFFC16C249330043F058 /* GameKit.framework */; };
-		3AA3D00016C3945C0043F058 /* BRDebugUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFF16C3945C0043F058 /* BRDebugUtilities.m */; };
+		3AC9936816C6D4E700115BCF /* BRBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */; };
+		3AC9936916C6D4E700115BCF /* BRDebugUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA3CFFF16C3945C0043F058 /* BRDebugUtilities.m */; };
+		3AC9936A16C6D4E700115BCF /* BRDataPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */; };
+		3AC9936B16C6D4E700115BCF /* BRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9934916C6D49500115BCF /* BRAppDelegate.m */; };
+		3AC9936C16C6D4E700115BCF /* BRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9934D16C6D49500115BCF /* BRViewController.m */; };
+		3AC9936D16C6D4E700115BCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9935816C6D49500115BCF /* main.m */; };
+		3AC9936F16C6D4E700115BCF /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFFC16C249330043F058 /* GameKit.framework */; };
+		3AC9937016C6D4E700115BCF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBB16C248CC0043F058 /* UIKit.framework */; };
+		3AC9937116C6D4E700115BCF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBD16C248CC0043F058 /* Foundation.framework */; };
+		3AC9937216C6D4E700115BCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */; };
+		3AC9937516C6D4E700115BCF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9934E16C6D49500115BCF /* Default-568h@2x.png */; };
+		3AC9937616C6D4E700115BCF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9934F16C6D49500115BCF /* Default.png */; };
+		3AC9937716C6D4E700115BCF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9935016C6D49500115BCF /* Default@2x.png */; };
+		3AC9937816C6D4E700115BCF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9935316C6D49500115BCF /* InfoPlist.strings */; };
+		3AC9937916C6D4E700115BCF /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC9935516C6D49500115BCF /* MainStoryboard_iPhone.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		3AA3CFE616C248CC0043F058 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3AA3CFB016C248CB0043F058 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3AA3CFB716C248CC0043F058;
-			remoteInfo = BRBluetoothManager;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3A1F521216C4E4AC003D61E9 /* BRDataPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDataPacket.h; sourceTree = "<group>"; };
 		3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDataPacket.m; sourceTree = "<group>"; };
-		3AA3CFB816C248CC0043F058 /* BRBluetoothManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRBluetoothManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3CFBB16C248CC0043F058 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3AA3CFBD16C248CC0043F058 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3AA3CFBF16C248CC0043F058 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3AA3CFC316C248CC0043F058 /* BRBluetoothManager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRBluetoothManager-Info.plist"; sourceTree = "<group>"; };
-		3AA3CFC516C248CC0043F058 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3AA3CFC716C248CC0043F058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3AA3CFC916C248CC0043F058 /* BRBluetoothManager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BRBluetoothManager-Prefix.pch"; sourceTree = "<group>"; };
-		3AA3CFCA16C248CC0043F058 /* BRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRAppDelegate.h; sourceTree = "<group>"; };
-		3AA3CFCB16C248CC0043F058 /* BRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRAppDelegate.m; sourceTree = "<group>"; };
-		3AA3CFCD16C248CC0043F058 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		3AA3CFCF16C248CC0043F058 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		3AA3CFD116C248CC0043F058 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		3AA3CFD416C248CC0043F058 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
-		3AA3CFD916C248CC0043F058 /* BRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
-		3AA3CFDA16C248CC0043F058 /* BRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
 		3AA3CFE116C248CC0043F058 /* BRBluetoothManagerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BRBluetoothManagerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA3CFE216C248CC0043F058 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		3AA3CFEA16C248CC0043F058 /* BRBluetoothManagerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BRBluetoothManagerTests-Info.plist"; sourceTree = "<group>"; };
@@ -69,20 +46,22 @@
 		3AA3CFFC16C249330043F058 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		3AA3CFFE16C3945B0043F058 /* BRDebugUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRDebugUtilities.h; sourceTree = "<group>"; };
 		3AA3CFFF16C3945C0043F058 /* BRDebugUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRDebugUtilities.m; sourceTree = "<group>"; };
+		3AC9934816C6D49500115BCF /* BRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRAppDelegate.h; sourceTree = "<group>"; };
+		3AC9934916C6D49500115BCF /* BRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRAppDelegate.m; sourceTree = "<group>"; };
+		3AC9934A16C6D49500115BCF /* Demo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Demo.plist; sourceTree = "<group>"; };
+		3AC9934B16C6D49500115BCF /* Demo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Demo-Prefix.pch"; sourceTree = "<group>"; };
+		3AC9934C16C6D49500115BCF /* BRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRViewController.h; sourceTree = "<group>"; };
+		3AC9934D16C6D49500115BCF /* BRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRViewController.m; sourceTree = "<group>"; };
+		3AC9934E16C6D49500115BCF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3AC9934F16C6D49500115BCF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3AC9935016C6D49500115BCF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3AC9935416C6D49500115BCF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3AC9935616C6D49500115BCF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3AC9935816C6D49500115BCF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3AC9937D16C6D4E700115BCF /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3AA3CFB516C248CC0043F058 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AA3CFFD16C249330043F058 /* GameKit.framework in Frameworks */,
-				3AA3CFBC16C248CC0043F058 /* UIKit.framework in Frameworks */,
-				3AA3CFBE16C248CC0043F058 /* Foundation.framework in Frameworks */,
-				3AA3CFC016C248CC0043F058 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3AA3CFDD16C248CC0043F058 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,12 +72,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC9936E16C6D4E700115BCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC9936F16C6D4E700115BCF /* GameKit.framework in Frameworks */,
+				3AC9937016C6D4E700115BCF /* UIKit.framework in Frameworks */,
+				3AC9937116C6D4E700115BCF /* Foundation.framework in Frameworks */,
+				3AC9937216C6D4E700115BCF /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		3AA3CFAF16C248CB0043F058 = {
 			isa = PBXGroup;
 			children = (
+				3AC9934716C6D49500115BCF /* Demo */,
 				3AA3CFC116C248CC0043F058 /* BRBluetoothManager */,
 				3AA3CFE816C248CC0043F058 /* BRBluetoothManagerTests */,
 				3AA3CFBA16C248CC0043F058 /* Frameworks */,
@@ -109,8 +100,8 @@
 		3AA3CFB916C248CC0043F058 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3AA3CFB816C248CC0043F058 /* BRBluetoothManager.app */,
 				3AA3CFE116C248CC0043F058 /* BRBluetoothManagerTests.octest */,
+				3AC9937D16C6D4E700115BCF /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,12 +121,6 @@
 		3AA3CFC116C248CC0043F058 /* BRBluetoothManager */ = {
 			isa = PBXGroup;
 			children = (
-				3AA3CFCA16C248CC0043F058 /* BRAppDelegate.h */,
-				3AA3CFCB16C248CC0043F058 /* BRAppDelegate.m */,
-				3AA3CFD316C248CC0043F058 /* MainStoryboard_iPhone.storyboard */,
-				3AA3CFD916C248CC0043F058 /* BRViewController.h */,
-				3AA3CFDA16C248CC0043F058 /* BRViewController.m */,
-				3AA3CFC216C248CC0043F058 /* Supporting Files */,
 				3AA3CFF916C249000043F058 /* BRBluetoothManager.h */,
 				3AA3CFFA16C249000043F058 /* BRBluetoothManager.m */,
 				3AA3CFFE16C3945B0043F058 /* BRDebugUtilities.h */,
@@ -144,20 +129,6 @@
 				3A1F521316C4E4AC003D61E9 /* BRDataPacket.m */,
 			);
 			path = BRBluetoothManager;
-			sourceTree = "<group>";
-		};
-		3AA3CFC216C248CC0043F058 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3AA3CFC316C248CC0043F058 /* BRBluetoothManager-Info.plist */,
-				3AA3CFC416C248CC0043F058 /* InfoPlist.strings */,
-				3AA3CFC716C248CC0043F058 /* main.m */,
-				3AA3CFC916C248CC0043F058 /* BRBluetoothManager-Prefix.pch */,
-				3AA3CFCD16C248CC0043F058 /* Default.png */,
-				3AA3CFCF16C248CC0043F058 /* Default@2x.png */,
-				3AA3CFD116C248CC0043F058 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3AA3CFE816C248CC0043F058 /* BRBluetoothManagerTests */ = {
@@ -179,26 +150,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3AC9934716C6D49500115BCF /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9936516C6D4C200115BCF /* Resources */,
+				3AC9936416C6D4B000115BCF /* Supporting Files */,
+				3AC9934816C6D49500115BCF /* BRAppDelegate.h */,
+				3AC9934916C6D49500115BCF /* BRAppDelegate.m */,
+				3AC9934C16C6D49500115BCF /* BRViewController.h */,
+				3AC9934D16C6D49500115BCF /* BRViewController.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		3AC9936416C6D4B000115BCF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9934A16C6D49500115BCF /* Demo.plist */,
+				3AC9934B16C6D49500115BCF /* Demo-Prefix.pch */,
+				3AC9935316C6D49500115BCF /* InfoPlist.strings */,
+				3AC9935816C6D49500115BCF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3AC9936516C6D4C200115BCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3AC9934E16C6D49500115BCF /* Default-568h@2x.png */,
+				3AC9934F16C6D49500115BCF /* Default.png */,
+				3AC9935016C6D49500115BCF /* Default@2x.png */,
+				3AC9935516C6D49500115BCF /* MainStoryboard_iPhone.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3AA3CFB716C248CC0043F058 /* BRBluetoothManager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AA3CFF316C248CC0043F058 /* Build configuration list for PBXNativeTarget "BRBluetoothManager" */;
-			buildPhases = (
-				3AA3CFB416C248CC0043F058 /* Sources */,
-				3AA3CFB516C248CC0043F058 /* Frameworks */,
-				3AA3CFB616C248CC0043F058 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BRBluetoothManager;
-			productName = BRBluetoothManager;
-			productReference = 3AA3CFB816C248CC0043F058 /* BRBluetoothManager.app */;
-			productType = "com.apple.product-type.application";
-		};
 		3AA3CFE016C248CC0043F058 /* BRBluetoothManagerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3AA3CFF616C248CC0043F058 /* Build configuration list for PBXNativeTarget "BRBluetoothManagerTests" */;
@@ -211,12 +200,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				3AA3CFE716C248CC0043F058 /* PBXTargetDependency */,
 			);
 			name = BRBluetoothManagerTests;
 			productName = BRBluetoothManagerTests;
 			productReference = 3AA3CFE116C248CC0043F058 /* BRBluetoothManagerTests.octest */;
 			productType = "com.apple.product-type.bundle";
+		};
+		3AC9936616C6D4E700115BCF /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AC9937A16C6D4E700115BCF /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				3AC9936716C6D4E700115BCF /* Sources */,
+				3AC9936E16C6D4E700115BCF /* Frameworks */,
+				3AC9937316C6D4E700115BCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = BRBluetoothManager;
+			productReference = 3AC9937D16C6D4E700115BCF /* Demo.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -240,30 +245,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3AA3CFB716C248CC0043F058 /* BRBluetoothManager */,
 				3AA3CFE016C248CC0043F058 /* BRBluetoothManagerTests */,
+				3AC9936616C6D4E700115BCF /* Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3AA3CFB616C248CC0043F058 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AA3CFC616C248CC0043F058 /* InfoPlist.strings in Resources */,
-				3AA3CFCE16C248CC0043F058 /* Default.png in Resources */,
-				3AA3CFD016C248CC0043F058 /* Default@2x.png in Resources */,
-				3AA3CFD216C248CC0043F058 /* Default-568h@2x.png in Resources */,
-				3AA3CFD516C248CC0043F058 /* MainStoryboard_iPhone.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3AA3CFDE16C248CC0043F058 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3AA3CFED16C248CC0043F058 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3AC9937316C6D4E700115BCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC9937516C6D4E700115BCF /* Default-568h@2x.png in Resources */,
+				3AC9937616C6D4E700115BCF /* Default.png in Resources */,
+				3AC9937716C6D4E700115BCF /* Default@2x.png in Resources */,
+				3AC9937816C6D4E700115BCF /* InfoPlist.strings in Resources */,
+				3AC9937916C6D4E700115BCF /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,19 +291,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3AA3CFB416C248CC0043F058 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AA3CFC816C248CC0043F058 /* main.m in Sources */,
-				3AA3CFCC16C248CC0043F058 /* BRAppDelegate.m in Sources */,
-				3AA3CFDB16C248CC0043F058 /* BRViewController.m in Sources */,
-				3AA3CFFB16C249000043F058 /* BRBluetoothManager.m in Sources */,
-				3AA3D00016C3945C0043F058 /* BRDebugUtilities.m in Sources */,
-				3A1F521416C4E4AC003D61E9 /* BRDataPacket.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3AA3CFDC16C248CC0043F058 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,39 +299,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3AC9936716C6D4E700115BCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AC9936816C6D4E700115BCF /* BRBluetoothManager.m in Sources */,
+				3AC9936916C6D4E700115BCF /* BRDebugUtilities.m in Sources */,
+				3AC9936A16C6D4E700115BCF /* BRDataPacket.m in Sources */,
+				3AC9936B16C6D4E700115BCF /* BRAppDelegate.m in Sources */,
+				3AC9936C16C6D4E700115BCF /* BRViewController.m in Sources */,
+				3AC9936D16C6D4E700115BCF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3AA3CFE716C248CC0043F058 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3AA3CFB716C248CC0043F058 /* BRBluetoothManager */;
-			targetProxy = 3AA3CFE616C248CC0043F058 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		3AA3CFC416C248CC0043F058 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AA3CFC516C248CC0043F058 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		3AA3CFD316C248CC0043F058 /* MainStoryboard_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3AA3CFD416C248CC0043F058 /* en */,
-			);
-			name = MainStoryboard_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
 		3AA3CFEB16C248CC0043F058 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3AA3CFEC16C248CC0043F058 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3AC9935316C6D49500115BCF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC9935416C6D49500115BCF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3AC9935516C6D49500115BCF /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AC9935616C6D49500115BCF /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -403,28 +400,6 @@
 			};
 			name = Release;
 		};
-		3AA3CFF416C248CC0043F058 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BRBluetoothManager/BRBluetoothManager-Prefix.pch";
-				INFOPLIST_FILE = "BRBluetoothManager/BRBluetoothManager-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		3AA3CFF516C248CC0043F058 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "BRBluetoothManager/BRBluetoothManager-Prefix.pch";
-				INFOPLIST_FILE = "BRBluetoothManager/BRBluetoothManager-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 		3AA3CFF716C248CC0043F058 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -459,6 +434,28 @@
 			};
 			name = Release;
 		};
+		3AC9937B16C6D4E700115BCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo.plist";
+				PRODUCT_NAME = Demo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3AC9937C16C6D4E700115BCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Demo/Demo-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/Demo/Demo.plist";
+				PRODUCT_NAME = Demo;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,20 +468,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3AA3CFF316C248CC0043F058 /* Build configuration list for PBXNativeTarget "BRBluetoothManager" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AA3CFF416C248CC0043F058 /* Debug */,
-				3AA3CFF516C248CC0043F058 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		3AA3CFF616C248CC0043F058 /* Build configuration list for PBXNativeTarget "BRBluetoothManagerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3AA3CFF716C248CC0043F058 /* Debug */,
 				3AA3CFF816C248CC0043F058 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AC9937A16C6D4E700115BCF /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AC9937B16C6D4E700115BCF /* Debug */,
+				3AC9937C16C6D4E700115BCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
