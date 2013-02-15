@@ -36,6 +36,27 @@ extern NSString * const BRBluetoothManagerSessionName;
 @optional
 
 /**
+ * Called when the sender begins sending data to the receiver
+ * @param error NSError
+ * @return void
+ */
+-(void)bluetoothManager:(BRBluetoothManager *)manager didBeginToSendData:(NSData *)data;
+
+/**
+ * Called when the reciever gets its first packet
+ * @param error NSError
+ * @return void
+ */
+-(void)bluetoothManager:(BRBluetoothManager *)manager didBeginToReceiveData:(NSData *)data;
+
+/**
+ * Called when a data packet is sent
+ * @param error NSError
+ * @return void
+ */
+-(void)bluetoothManager:(BRBluetoothManager *)manager didSendDataOfLength:(int)length fromTotal:(int)totalLength withRemaining:(int)remaining;
+
+/**
  * Called when the receiving device receives a packet. Use this method to update any progress indicators, GUI etc.
  * @param length int - size of packet that has been recevied in bytes
  * @param totalLength int - total size of data being sent in bytes
@@ -64,6 +85,8 @@ extern NSString * const BRBluetoothManagerSessionName;
 @interface BRBluetoothManager : NSObject <GKSessionDelegate, GKPeerPickerControllerDelegate>
 
 @property (nonatomic, strong) id <BRBluetoothManagerDelegate> delegate;
+@property (nonatomic, readwrite) BOOL isConnected;
+@property (nonatomic, readwrite) BOOL isSending;
 
 /**
  * Displays the built in Peer picker used by GameKit to pair devices.
@@ -82,5 +105,11 @@ extern NSString * const BRBluetoothManagerSessionName;
  * @return void
  */
 -(void)resetSession;
+
+/**
+ * Cancels the current data transfer but maintains the session
+ * @return void
+ */
+-(void)cancelCurrentTransfer;
 
 @end

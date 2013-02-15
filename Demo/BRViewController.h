@@ -14,4 +14,8 @@
 @property (nonatomic, strong) IBOutlet UIButton *sendButton;
 @property (nonatomic, strong) IBOutlet UIButton *connectButton;
 
+@property (nonatomic, strong) IBOutlet UIView *transferProgressWrapper;
+@property (nonatomic, strong) IBOutlet UIProgressView *transferProgress;
+@property (nonatomic, strong) IBOutlet UILabel *transferProgressLabel;
+
 @end

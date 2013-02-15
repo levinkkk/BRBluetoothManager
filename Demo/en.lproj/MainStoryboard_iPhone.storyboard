@@ -38,19 +38,50 @@
                                     <action selector="sendData:" destination="2" eventType="touchUpInside" id="NVV-qY-V1K"/>
                                 </connections>
                             </button>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FQ2-Mj-ezc">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Transfer progress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rd4-Xl-LTY">
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="01P-RT-3O4">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="9" id="Wkb-lu-b4o"/>
+                                        </constraints>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="01P-RT-3O4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="3Pl-DE-otv"/>
+                                    <constraint firstItem="01P-RT-3O4" firstAttribute="leading" secondItem="FQ2-Mj-ezc" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="7wN-Z2-kef"/>
+                                    <constraint firstAttribute="trailing" secondItem="rd4-Xl-LTY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="FBr-XP-8G1"/>
+                                    <constraint firstAttribute="bottom" secondItem="01P-RT-3O4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="LCX-LR-kkp"/>
+                                    <constraint firstItem="rd4-Xl-LTY" firstAttribute="leading" secondItem="FQ2-Mj-ezc" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rZf-n1-iX2"/>
+                                    <constraint firstItem="01P-RT-3O4" firstAttribute="top" secondItem="rd4-Xl-LTY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rfq-gt-SU6"/>
+                                    <constraint firstItem="rd4-Xl-LTY" firstAttribute="top" secondItem="FQ2-Mj-ezc" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xdJ-n7-bcY"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NdP-Mx-yds" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="FbB-Gn-xOf"/>
+                            <constraint firstItem="5HU-ZE-5wE" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="2RR-U8-cpB"/>
                             <constraint firstItem="5HU-ZE-5wE" firstAttribute="top" secondItem="NdP-Mx-yds" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Mgp-g3-Gd3"/>
+                            <constraint firstItem="FQ2-Mj-ezc" firstAttribute="centerX" secondItem="5HU-ZE-5wE" secondAttribute="centerX" type="default" id="Uf5-hT-5ME"/>
                             <constraint firstItem="5HU-ZE-5wE" firstAttribute="leading" secondItem="NdP-Mx-yds" secondAttribute="leading" type="default" id="ixH-F6-nWf"/>
+                            <constraint firstItem="FQ2-Mj-ezc" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="65" id="oXx-4z-TFc"/>
                             <constraint firstItem="NdP-Mx-yds" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="oeC-xW-9lb"/>
                             <constraint firstItem="5HU-ZE-5wE" firstAttribute="trailing" secondItem="NdP-Mx-yds" secondAttribute="trailing" type="default" id="ppl-xR-TqC"/>
+                            <constraint firstAttribute="bottom" secondItem="FQ2-Mj-ezc" secondAttribute="bottom" constant="110" id="uDo-Dt-TR2"/>
+                            <constraint firstItem="FQ2-Mj-ezc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="360" id="wPq-Be-fwy"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="connectButton" destination="NdP-Mx-yds" id="V2r-jJ-SWS"/>
                         <outlet property="sendButton" destination="5HU-ZE-5wE" id="2at-QK-YWV"/>
+                        <outlet property="transferProgress" destination="01P-RT-3O4" id="hiF-bs-mrb"/>
+                        <outlet property="transferProgressLabel" destination="rd4-Xl-LTY" id="nm4-P8-qe9"/>
+                        <outlet property="transferProgressWrapper" destination="FQ2-Mj-ezc" id="v28-cP-PYy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -61,10 +92,11 @@
         <class className="BRViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BRViewController.h"/>
             <relationships>
-                <relationship kind="action" name="connectButtonHandler:"/>
-                <relationship kind="action" name="sendData:"/>
                 <relationship kind="outlet" name="connectButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="sendButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="transferProgress" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="transferProgressLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="transferProgressWrapper" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
