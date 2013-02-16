@@ -96,6 +96,9 @@
 
 -(void)bluetoothManager:(BRBluetoothManager *)manager didBeginToReceiveData:(NSData *)data {
     NSLog(@"First packet received");
+    
+    //Set up the view to handle reciving data
+    [self.transferProgressWrapper setHidden:NO];
 }
 
 -(void)bluetoothManager:(BRBluetoothManager *)manager didSendDataOfLength:(int)length fromTotal:(int)totalLength withRemaining:(int)remaining {
@@ -104,8 +107,10 @@
     
     float fRemaining = remaining;
     float fTotalLength = totalLength;
-
-    self.transferProgress.progress = fRemaining/fTotalLength;
+    
+    float percent = fRemaining/fTotalLength;
+    
+    self.transferProgress.progress = percent;
 }
 
 -(void)bluetoothManager:(BRBluetoothManager *)manager didDisconnectFromPeer:(NSString *)peer {
@@ -125,7 +130,12 @@
     
     NSLog(@"Delegate: received %ikb of %ikb",remaining/1024,totalLength/1024);
     
-    float percent = 100/totalLength * remaining;
+    float fRemaining = remaining;
+    float fTotalLength = totalLength;
+    
+    float percent = fRemaining/fTotalLength;
+    
+    NSLog(@"%f%%",percent);
     
     [self.transferProgress setProgress:percent];
     
